@@ -45,12 +45,19 @@ class Empleado {
     {
         $this->codigo = $codigo;
     }
+    public function setApellido($apellido)
+    {
+        $this->Apellido = $apellido;
+    }
 
 }
 
-$juan = new Empleado('Harrisson', 'Bernal', 'TI', 'juan@empresa.com', 006);
-$juan->setNombre("Un Nuevo Nombre");
+$harry = new Empleado('Harrisson', 'Bernal', 'TI', 'harry@empresa.com', 006);
+$harry->setNombre("Un Nuevo Nombre");
+$harry->setCodigo('2030');
+$harry->setApellido('Bernal')
 
-$juan->setCodigo('2030');
-echo $juan->getCodigo();
-echo $juan->getNombre();
+
+echo $harry->getCodigo();
+echo $harry->getNombre();
+echo $harry->getApellido();

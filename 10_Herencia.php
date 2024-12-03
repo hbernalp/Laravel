@@ -26,7 +26,7 @@ class Persona {
     }
 }
 
-// Heredando desde la clase principal Persona
+// Heredando desde la clase principal Persona con el extends
 class Empleado extends Persona {
 
     protected $codigo;
@@ -43,7 +43,7 @@ class Empleado extends Persona {
 class Proveedor extends Persona {
     protected $empresa;
 
-    public function __construct($nombre, $apellido, $email, $telefono, $empresa)
+    public function __construct($nombre, $apellido, $email, $telefono, $empresa) //Constructor de empleado
     {
         parent::__construct($nombre, $apellido, $email, $telefono);
         $this->empresa = $empresa;
